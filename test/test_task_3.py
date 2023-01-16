@@ -1,5 +1,5 @@
 from conftest import *
-from requests.auth import HTTPBasicAuth
+
 
 url = 'http://users.bugred.ru/tasks/rest/'
 
