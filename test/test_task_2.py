@@ -1,14 +1,13 @@
 from conftest import *
 from requests.auth import HTTPBasicAuth
 
+
+# JIRA: тестируем статус код после создания комментария
+
 url = 'https://testbase.atlassian.net/rest/api/3/issue/TEST-18485/comment'
 
-
-
-user = 'mail.for.testbase@gmail.com'
-password = 'AUaP65O4PnLFjoKqslJkCF9B'
-
-
+user = '*****'
+password = '*****'
 
 body = {
     "body":
@@ -30,7 +29,7 @@ body = {
     "visibility":None
 }
 
-# JIRA: тестируем статус код после создания комментария
+
 def test_add_comment_jira():
     response = requests.post(url, auth=HTTPBasicAuth(user, password), json=body)
 
