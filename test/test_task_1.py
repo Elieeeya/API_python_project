@@ -1,5 +1,8 @@
+#1. MagicSearch: проверяем статус коды
+
 from conftest import *
 
+url = 'http://users.bugred.ru/tasks/rest/'
 
 headers = {
     'Content-Type': 'application/json, application/xml, form-data',
